@@ -1,0 +1,81 @@
+/* pages/work/work.wxss */
+page{
+  color: #666666;
+}
+view{
+  font-family: "宋体";
+  /*color:#888;*/
+  color: #666666;
+  font-size: 16px;
+}
+
+.div1{
+/*border:1px solid black;
+margin-top: -50px;
+border-radius:9px;
+box-shadow:2px 5px 8px #5bc0de inset;*/
+margin-top:-70px;
+}
+
+.div2{
+/*border:1px solid black;
+margin-top: 20px;
+border-radius:9px;
+box-shadow:1px 8px 5px #5bc0de;*/
+margin-top:17px;
+}
+
+.icon{
+  width:20rpx;
+  height:20rpx;
+}
+
+.company{
+  color:#23527c;
+  font-size:23px;
+  font-weight: 700;
+}
+
+.job{
+  position: relative;
+    font-size: 18px;
+    color: #666666;
+    margin-top: 5px;
+    margin-left:9px;
+}
+
+.worktime{
+  margin-left:46px;
+  font-size:16px;
+  color:#666666;
+}
+
+.content{
+  margin-top: 14px;
+  font-size:16px;
+  color:#666666;
+}
+
+.big{
+  margin-left: 24rpx;
+}
+
+.line{
+  width:100%;
+  height:1px;
+  background:#999999;
+  margin-top: 5px;
+}
+
+.card {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 4px 1px 1px #cccccc;
+   /* margin: 8px;*/
+    position: relative;
+}
+.title {
+   background:#eeeeee;
+  box-shadow:4px 1px 1px #cccccc;
+}

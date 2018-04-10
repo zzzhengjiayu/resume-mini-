@@ -1,0 +1,67 @@
+/* pages/project/project.wxss */
+view{
+  font-family: "宋体";
+  /*color:#888;*/
+  color: #666666;
+  font-size: 16px;
+}
+.tagcss{
+  margin-left:-7px;
+  font-size:20px;
+  line-height:26px;
+  margin-top: 6px;
+  background: #5bc0de;
+}
+
+.icon{
+  width:20rpx;
+  height:20rpx;
+}
+
+.div1{
+/*border:1px dotted black;*/
+margin-top: -73px;
+border-radius:9px;
+}
+
+.div2{
+/*border:1px dotted black;*/
+margin-top: 10px;
+border-radius:9px;
+}
+
+.div3{
+/*border:1px dotted black;*/
+margin-top: 10px;
+border-radius:9px;
+}
+
+.project{
+  color:#23527c;
+  font-size:18px;
+  font-weight: 700;
+}
+
+.projecttime{
+    position: relative;
+    font-size: 18px;
+    color: #666666;
+    margin-top: 5px;
+}
+
+.content{
+  margin-top: 8px;
+  font-size:16px;
+  color:#666666;
+}
+
+.line{
+  width:100%;
+  height:1px;
+  background:#999999;
+  margin-top: 5px;
+}
+
+.big{
+  margin-left:22rpx;
+}

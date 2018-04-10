@@ -1,0 +1,60 @@
+<!--pages/resume/resume.wxml-->
+<view class='container big'>
+  <view>
+  <!--头像部分-->
+      <view bindtap='chooseimg' class='userinfo'>
+      <image wx:if="{{myphoto == null}}" class="userinfo-avatar" src='{{userInfo.avatarUrl}}'     background-size="cover"></image>
+      <image wx:else src='{{myphoto}}'></image>
+      <text class='userinfo-nickname zan-c-gray-darker zan-font-bold'>{{username}}</text>
+      <text class='zan-font-20 zan-font-bold' style='color:#454545;'>{{office}}</text>
+  </view>
+  </view>
+  <!--基本信息-->
+  <view style='text-align:center;'>
+    <view class='infoone'>
+      <view class="zan-col zan-col-4 icon"><image class="info-icon" src='{{infoicon}}'></image></view>
+      <text class="zan-col zan-font-16 text">{{infoinfo}}</text>
+    </view>
+    <view class='infotwo'>
+      <view class="zan-col zan-col-4 icon"><image class="info-icon" bindtap='callphone' src='{{phoneicon}}' ></image></view>
+      <view class="zan-col zan-font-16 text">{{infophone}}</view>
+    </view>
+    <view class='infothree'>
+      <view class="zan-col zan-col-4 icon"><image class="info-icon" src='{{emailicon}}'></image></view>
+      <view class="zan-col zan-font-16 text" selectable="true" bindtap="copyTBL2">{{infoemail}}</view>
+    </view>
+    <view class='infofour'>
+      <view class="zan-col zan-col-4 icon"><image class="info-icon" bindtap='calladdress' src='{{addressicon}}'></image></view>
+      <view class="zan-col zan-font-16 text">{{infoaddress}}</view>
+    </view>
+    <view class='infofive'>
+      <view class="zan-col zan-col-4 icon"><image class="info-icon" src='{{urlicon}}'></image></view>
+      <view class="zan-col zan-font-8 zan-ellipsis--12 text urltext" selectable="true" bindtap="copyTBL">{{infourl}}</view>
+    </view>
+  </view>
+
+  <view wx:for="{{dataarray}}">
+    <view wx:if="{{index == 0}}" style='margin-left:{{leftmargin}}'> 
+      <view class="zan-tag tagcss">{{item.theme}}</view>
+      <view wx:for="{{item.content}}"  wx:for-item="items" class='zan-font-16' style='margin-top:5px;'>
+        <image class='skillimg' src='{{skillicon}}'></image>\t\t\t\t
+        <text>{{items.item}}</text>
+      </view>
+     </view>
+    <view wx:elif="{{index == 1}}"> 
+      <view class="zan-tag tagcss">{{item.theme}}</view>
+      <view wx:for="{{item.content}}"  wx:for-item="items" class='zan-font-16'>
+        <image class='skillimg' src='{{skillicon}}'></image>\t\t\t\t
+        <text>{{items.item}}</text>
+      </view>
+     </view>
+    <view wx:elif="{{index > 1}}"> 
+       <view class="zan-tag tagcss">荣誉证书</view>
+        <view>{{prond}}</view>
+        <view class='prondtime'>{{prondtime}}</view>
+        <view class="zan-tag tagcss">座右铭</view>
+        <view>{{motto}}</view>
+     </view>
+  </view>
+</view>
+

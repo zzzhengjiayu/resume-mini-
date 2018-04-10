@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+<!--头像部分-->
+      <view bindtap='chooseimg' class='userinfo'>
+      <image wx:if="{{myphoto == null}}" class="userinfo-avatar" src='{{userInfo.avatarUrl}}'     background-size="cover"></image>
+      <image wx:else src='{{myphoto}}'></image>
+      <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
+      <text class='office'>{{office}}</text>
+  </view>
+
+<!--基本信息-->
+  <view class='myinfocontainer'>
+    <view class='info'>
+      <image class="info-icon" src='{{info}}'></image>
+      <text class='textcontent'>{{infoone}}</text>
+    </view>
+    <view class='info'>
+      <image class="info-icon" src='{{phone}}'></image>
+      <text>{{infophone}}</text>
+    </view>
+    <view class='info'>
+      <image class="info-icon" src='{{address}}'></image>
+      <text>{{addressinfo}}</text>
+    </view>
+    <view class='info'>
+      <image class="info-icon" src='{{email}}'></image>
+      <text>{{emailinfo}}</text>
+    </view>
+    <view class='info'>
+      <image class="info-icon" src='{{url}}'></image>
+      <text>{{urlinfo}}</text>
+    </view>
+    
+  </view>
+
+  <!--相关技能-->
+  <view class='skill'>
+
+  </view>
+
+   <!--座右铭-->
+  <view class='motto'>
+
+  </view>
+</view>

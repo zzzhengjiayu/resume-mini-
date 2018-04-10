@@ -1,0 +1,29 @@
+<!--pages/work/work.wxml-->
+<view class='container big' style="margin-left:{{left}};width:{{width}};">
+  <view wx:for="{{work}}" class='card {{item.css}}'>
+    <view class="title">
+    <view class='company'>{{item.company}}</view>
+    <text class='job'>{{item.job}}</text>
+    <text class='worktime'>{{item.worktime}}</text>
+    </view>
+    <view wx:for="{{item.workcontent}}" wx:for-item="items"  class='content'>
+      <image class='icon' src='{{icon}}'></image>\t\t\t\t{{items.content}}
+    </view>
+  </view>
+</view>
+<!--<view class="container">
+
+  <view wx:for="{{work}}" class='{{item.css}}'>
+
+  <view class="zan-panel-title zan-font-bold" style='font-size:20px;color:black;margin-left:-10px;'>{{item.company}}</view>
+  <view class="zan-panel zan-hairline--bottom">
+    
+    <text style="padding: 15px;">{{item.job}}</text>
+    <text style="padding: 15px;">{{item.worktime}}</text>
+      <view wx:for="{{item.workcontent}}" wx:for-item="items"  class='content'>
+      <image class='icon' src='{{icon}}'></image>\t\t\t\t{{items.content}}
+    </view>
+  </view>
+  </view>
+
+</view>--> 

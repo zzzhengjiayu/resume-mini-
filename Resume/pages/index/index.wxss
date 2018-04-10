@@ -1,0 +1,59 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: -105rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin-top: 62px;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.mytext {
+  color: red;
+}
+
+.info-icon{
+   width: 50rpx;
+  height: 50rpx;
+}
+
+.myinfocontainer{
+  border: 1px solid black;
+}
+
+.info{
+  border: 1px solid rebeccapurple;
+  /*margin-left:-114px;*/
+}
+
+.textcontent{
+  margin-left:78px;
+}
+
+.phoneinfo{
+  border: 1px solid salmon;
+}
+
+.addressinfo{
+  border: 1px solid antiquewhite;
+}
+
+.emailinfo{
+  border: 1px solid blue;
+}
+
+.urlinfo{
+  border: 1px solid chartreuse;
+}

@@ -1,0 +1,21 @@
+<!--pages/project/project.wxml-->
+<view class='container big'  style="margin-left:{{left}};width:{{width}};">
+  <view wx:for="{{project}}" wx:for-item="item" wx:key="key" class='{{item.css}}'>
+    <view>
+    <text class='project'>{{item.name}}</text>
+    <view class='projecttime'>{{item.time}}</view>
+    <view class="zan-tag tagcss">项目描述</view>
+       <view wx:for="{{item.pcontent}}" wx:for-item="items" wx:key="key1" class='content'>
+      <image class='icon' src='{{icon}}'></image>\t\t\t\t{{items.content}}
+    </view>
+    <view class="zan-tag tagcss">项目职责</view>
+    <view wx:for="{{item.content2}}" wx:for-item="itemss" wx:key="key2" class='content'>
+      <image class='icon' src='{{icon}}'></image>\t\t\t\t{{itemss.content}}
+    </view>
+    <view class='zan-font-bold' style='color:black'>技术栈：{{item.skill}}</view>
+    </view>
+    <view wx:if="{{index<=1}}" class="line"></view>
+  </view>
+</view>
+
+

@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/resume/resume",
+    "pages/work/work",
+    "pages/project/project"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "应聘PHP开发工程师",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/resume/resume",
+        "text": "个人信息",
+        "iconPath": "images/myself.png",
+        "selectedIconPath": "images/myself.png"
+      },
+      {
+        "pagePath": "pages/work/work",
+        "text": "工作经验",
+        "iconPath": "images/historywork.png",
+        "selectedIconPath": "images/historywork.png"
+      },
+      {
+        "pagePath": "pages/project/project",
+        "text": "项目作品",
+        "iconPath": "images/show.png",
+        "selectedIconPath": "images/show.png"
+      }
+    ]
+  }
+}
